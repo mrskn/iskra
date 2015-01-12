@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "MuseoCyr";
+  src: local("Museo Cyrl 500"),       
+       url('/fonts/museo_cyrl_regular.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: local("Acrom"),       
+       url('/fonts/acrom-regular.otf');
+  font-weight: regular;
+}
+
+body {background: url('/img/bg-tile.png') repeat;}
+body {
+    min-width: 940px;
+    width: auto !important;
+}
+header {padding-top: 50px;margin-bottom: 50px;}
+footer {margin-top: 120px;margin-bottom: 60px;color: #a89fa0;}
+h1 {color: red; text-transform:uppercase;display: block;background: url('/img/iskra-logo.png') no-repeat;width:365px;height: 63px;}
+h2 {color: red; text-transform:uppercase;font-family: "MuseoCyr";font-size: 50px;margin-top: 80px;margin-bottom: 10px;z-index:20;}
+.item h2 {font-size: 32px;}
+h3 {color: red;text-transform:uppercase;font-family: "MuseoCyr";font-size: 24px;}
+h4 {color: #000; font-family: "MuseoCyr";font-size: 18px;margin:0px;line-height: 30px;}
+.hl {border: 1px solid red;}
+a {border-bottom: 1px solid red;color: #ff0000;}
+a:hover {text-decoration: none;color: #FF7373;}
+.bg-white {background: #fff;}
+.acrom {font-family: "Acrom";font-size: 14px;color: red;line-height: 24px;}
+.min-h-250 {min-height:270px;}
+.min-h-320 {min-height:160px;}
+.rocket {position: absolute; bottom: 0px; left:-70px; background: url('/img/rocket.png') no-repeat;width: 100%;height: 350px;z-index: 10;}
+.bpadding {padding-bottom: 20px;}
+
+a.request:link, a.request:active, a.request:visited {
+  display: block;
+  margin-top:82px;
+  color: #fff;
+  width: 260px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 0px;
+  background: url('/img/button-request.png') no-repeat;
+}
+a.request:hover {color: #fff;background: url('/img/button-request.png') 0px -53px no-repeat;}
+
+/* link icons */
+.twitter-icon,
+.fb-icon,
+.vk-icon {line-height: 24px;font-size: 14px;}
+.icon {width: 16px;height: 16px;margin-right: 6px;}
+
+/* title images */
+h3 > img {position: absolute;}
+.solution, .events {left:-40px;top:17px;}
+.plate {left:-55px;top:23px;}
+
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {padding-top:70px;}
+  .acrom {font-size: 18px;line-height: 24px;}
+  
+  /* link icons */
+  .twitter-icon,
+  .fb-icon,
+  .vk-icon {line-height: 24px;font-size: 14px;}
+  .icon {width: 24px;height: 24px;margin-right: 8px;}
+  
+  a.request:link, a.request:hover, a.request:visited {
+    margin-top: 86px;
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+  }
+  
+  .rocket {position: absolute; bottom: 0px; left: 50px; background: url('/img/rocket.png') no-repeat cover;width: 100%; height:420px;z-index: 10;}
+  
+  h2 {font-size: 54px;}
+  .item h2 {font-size: 42px;}
+  h3 {font-size: 24px;}
+  h4 {font-size: 18px;line-height: 30px;}
+}
+
+/* Large Devices, .visible-lg-* */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  header {padding-top:100px;}
+  .acrom {font-size: 18px;line-height: 24px;}
+  
+  /* link icons */
+  .twitter-icon,
+  .fb-icon,
+  .vk-icon {line-height: 24px;font-size: 16px;}
+  .icon {width: 24px;height: 24px;margin-right: 8px;}
+  
+  a.request:link, a.request:hover, a.request:visited {
+    margin-top: 87px;
+    width: 270px;
+    height:44px;
+    line-height: 44px;
+    font-size: 16px;
+  }
+  
+  .rocket {position: absolute; bottom: 0px; left: 230px; background: url('/img/rocket.png') no-repeat cover;width: 100%; height:490px;z-index: 10;}
+
+  h2 {font-size: 58px;}
+  .item h2 {font-size: 54px;}
+  h3 {font-size: 26px;}
+  h4 {font-size: 22px;line-height: 30px;}
+}
+
+@media (min-width: 1401px) {
+
+  header {padding-top: 100px;}
+  .acrom {font-size: 22px;line-height: 30px;}
+  
+  a.request {font-size: 14px;}
+  
+  /* link icons */
+  .twitter-icon,
+  .fb-icon,
+  .vk-icon {line-height: 30px;font-size: 22px;}
+  .icon {width: 35px;height: 35px;margin-right: 10px;}
+  
+  a.request:link, a.request:hover, a.request:visited {
+    margin-top: 92px;
+    height:50px;
+    line-height: 50px;
+    width: 298px;
+    font-size: 20px;  
+  }
+  
+  h2 {font-size: 68px;}
+  .item h2 {font-size: 64px;}
+  h3 {font-size: 30px;}
+  h4 {font-size: 28px;line-height: 45px;}
+  
+   .rocket {position: absolute; bottom: 0px; left: 460px; background: url('/img/rocket.png') no-repeat cover;width: 100%; height:558px;z-index: 10;}
+  
+  .min-h-250 {min-height:290px;}
+  .min-h-320 {min-height:230px;}
+  
+  footer {margin-top: 180px;margin-bottom: 60px;}
+}
