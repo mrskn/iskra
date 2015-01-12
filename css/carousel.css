@@ -1,0 +1,65 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 350px;
+  margin: 0px;
+}
+
+.carousel a {text-decoration: none;border: 0px;}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+  background: transparent;
+}
+
+.carousel-control.left, .carousel-control.right{   
+  width: 100px;
+  opacity:1;
+  filter: progid:none !important; 
+}
+.carousel-control.left {
+  background: url('/img/slider-arrow-left-normal.png') center center no-repeat !important;
+}
+.carousel-control.left:hover {
+  background: url('/img/slider-arrow-left-active.png') center center no-repeat !important;
+}
+.carousel-control.right {  
+  background: url('/img/slider-arrow-right-normal.png') center center no-repeat !important;
+}
+.carousel-control.right:hover {
+  background: url('/img/slider-arrow-right-active.png') center center no-repeat !important;
+}
+
+/* Small Devices, .visible-sm-* */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel {height: 350px;}
+  .carousel .item {height: 350px;}
+  .carousel-control.left, .carousel-control.right{width:70px;}
+}
+
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel {height: 420px;}
+  .carousel .item {height: 420px;}
+  .carousel-control.left, .carousel-control.right{width:70px;}
+}
+
+/* Large Devices, .visible-lg-* */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .carousel {height: 500px;}
+  .carousel .item {height: 500px;}
+  .carousel-control.left, .carousel-control.right{width:70px;}
+}
+
+@media (min-width: 1401px) {
+  .carousel {height: 594px;}
+  .carousel .item {height: 594px;}
+  .carousel-control.left, .carousel-control.right{width:70px;}
+}
